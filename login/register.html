@@ -14,14 +14,20 @@
                 <p>Fill in the details to join us</p>
             </div>
             
-            <form class="login-form" id="registerForm" novalidate>
-                <div class="form-group">
-    <div class="input-wrapper">
-        <input type="text" id="username" name="username" required>
-        <label for="username">Username</label>
+            <form action="#" class="login" id="registerForm">
+    <div class="field">
+        <input type="text" placeholder="Username" required id="username">
     </div>
-    <span class="error-message" id="usernameError"></span>
-</div>
+    <div class="field">
+        <input type="email" placeholder="Email Address" required id="email">
+    </div>
+    <div class="field">
+        <input type="password" placeholder="Password" required id="password">
+    </div>
+    <button type="submit">Daftar</button>
+</form>
+
+<p id="message"></p>
 
                 <div class="form-group">
                     <div class="input-wrapper password-wrapper">
