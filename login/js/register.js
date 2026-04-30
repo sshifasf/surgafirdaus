@@ -17,7 +17,9 @@ document.getElementById("registerForm").addEventListener("submit", async functio
 
     if (data.status === "success") {
         document.getElementById("message").innerText = "Registrasi berhasil, silakan login";
+        setTimeout(()=> {
         window.location.href = "index.html";
+        }, 2000);
     } else {
         document.getElementById("message").innerText = data.message || "Gagal registrasi";
     }
